@@ -4,7 +4,7 @@ Feature: The Star Wars Api Rest
     * url urlBase
     * def SpeciesSchema = read('../schemas/SpeciesSchema.json')
 
-  @API
+  @API2
   Scenario: GET name people not null
     Given path '/api/people'
     When method GET

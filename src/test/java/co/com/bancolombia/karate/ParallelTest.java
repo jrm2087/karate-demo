@@ -19,7 +19,7 @@ public class ParallelTest {
     public void testParallel() {
         Results results = Runner.path("classpath:co/com/bancolombia/karate/features")
                 .outputCucumberJson(true)
-                .tags("API")
+                .tags("API, API2")
                 .parallel(1);
         generateReport(results.getReportDir());
         Assertions.assertEquals(0, results.getFailCount(), results.getErrorMessages());
